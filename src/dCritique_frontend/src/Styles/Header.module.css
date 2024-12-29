@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: twinkle;
+  font-weight: bold;
+  font-size: 6.3vw;
+  margin: 0vw;
+  color: #ffff00;
+  text-align: center;
+  margin-bottom: 4vw;
+}
+
+h2 svg {
+  position: absolute;
+  top: 3.5vw;
+  left: 16vw;
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: auto;
+  padding: 3vw;
+  padding-top: 1.3vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.noise {
+  background-color: #3f45fa;
+  position: relative;
+  background-image: url(../../assets/noise-light.ico);
+}
+
+.AddBtn {
+  border-radius: 1.125vw;
+  border: 0.2vw solid #c4c6fe;
+  background: #9093f9;
+  box-shadow: 0.4vw 0.4vw 0vw 0vw #b6b7ff;
+  width: 13.625vw;
+  height: 3.6vw;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 1.625vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1.5vw;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-border-radius: 1.125vw;
+  -moz-border-radius: 1.125vw;
+  -ms-border-radius: 1.125vw;
+  -o-border-radius: 1.125vw;
+}
+.AddBtn:hover {
+  box-shadow: none;
+  color: yellow;
+  border: none;
+  transform: scale(98%);
+}
+.AddBtn:active {
+  transform: scale(95%);
+  color: yellow;
+}

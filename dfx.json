@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "dCritique_backend": {
+      "main": "src/dCritique_backend/main.mo",
+      "type": "motoko"
+    },
+    "dCritique_frontend": {
+      "dependencies": [
+        "dCritique_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dCritique_frontend/src/index.html"
+      },
+      "source": [
+        "src/dCritique_frontend/assets",
+        "dist/dCritique_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

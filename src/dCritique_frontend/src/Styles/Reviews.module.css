@@ -1,0 +1,52 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 1.2vw;
+  background-color: #fdfddd;
+  border-radius: 1.5vw;
+  width: 98%;
+  box-sizing: border-box;
+}
+.review {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.text {
+  color: #3c3f9b;
+  font-family: Inter;
+  font-size: 1.625vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 60vw;
+}
+
+.star {
+  color: #3c3f9b;
+  font-family: Inter;
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+}
+
+.imgContainer {
+  max-width: 16vw;
+  max-height: 30vw;
+  overflow: hidden;
+  margin-bottom: 0.5vw;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 2vw;
+}
+

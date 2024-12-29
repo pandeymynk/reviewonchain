@@ -1,0 +1,10 @@
+type Review = 
+ record {
+   images: text;
+   review: text;
+   stars: text;
+ };
+service : {
+  addReview: (text, int, text) -> () oneway;
+  getReview: () -> (vec Review) query;
+}

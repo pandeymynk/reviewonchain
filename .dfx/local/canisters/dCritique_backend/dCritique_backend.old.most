@@ -1,0 +1,7 @@
+// Version: 1.0.0
+type List<T> = ?(T, List<T>);
+type Review = {images : Text; review : Text; stars : Text};
+actor {
+  stable var idCount : Nat;
+  stable var reviews : ?(Review, List<Review>)
+};

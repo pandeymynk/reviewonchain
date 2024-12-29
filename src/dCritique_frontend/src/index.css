@@ -1,0 +1,58 @@
+.votebtns {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.like,
+.dislike {
+  border: #1a20cf solid;
+  background-color: aliceblue;
+  font-size: 14px;
+  padding: 5px;
+  padding-bottom: 8px;
+  border-radius: 0.5vw;
+  color: #162356;
+  font-family: up;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+  font-family: Inter;
+  font-size: 1vw;
+  font-weight: 800;
+  color: #1a20cf;
+}
+
+.like:hover,
+.dislike:hover {
+  background-color: #9093f9;
+  border: 0.2vw solid #3f45fa;
+}
+
+.like:active,
+.dislike:active {
+  background-color: #9093f9;
+  border: 0.2vw solid #3f45fa;
+  transform: scale(94%);
+}
+
+.likeActive,
+.dislikeActive {
+  border: 0.2vw solid #c4c6fe;
+  background-color: #3f45fa;
+  font-size: 14px;
+  padding: 5px;
+  padding-bottom: 8px;
+  border-radius: 0.5vw;
+  color: #162356;
+  font-family: up;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+  font-family: Inter;
+  font-size: 1vw;
+  font-weight: 800;
+  color: #c4c6fe;
+}
