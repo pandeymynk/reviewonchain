@@ -1,21 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "./Components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { UploadFile } from "./Components/UploadFile";
-import { Loader } from "./Components/Loader";
+import { ReviewDashboard } from "./Components/ReviewDashboard";
+import { AnimatedBackground } from "./Components/AnimatedBackground";
+import "./index.css";
 
 function App() {
-  const [showForm, setShowForm] = useState(false);
-  return (
+  const [theme, setTheme] = useState('dark');
 
-    <>
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  return (
+    <div className="app">
+      <AnimatedBackground />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Header />} />
-          <Route path="/loader" element={<Loader />} />
+          <Route path="/" element={<ReviewDashboard theme={theme} setTheme={setTheme} />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
